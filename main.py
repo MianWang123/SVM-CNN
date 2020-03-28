@@ -6,7 +6,6 @@ Author: Mian Wang
 Time: 3/27/20
 """
 
-
 import numpy as np
 from scipy import stats 
 import matplotlib.pyplot as plt
@@ -286,7 +285,6 @@ train_acc25, train_acc27, train_acc57, test_acc_ovo = svm.train()
 print(f'The final test accuracy: {test_acc_ovo[-1]}')
 
 # plot one-versus-one SVM's training accuracy & test accuracy v.s number of iteration
-plt.figure(1)
 plt.plot(1-np.array(train_acc25))
 plt.xticks(range(len(train_acc25)))
 plt.xlabel('iteration')
@@ -294,7 +292,6 @@ plt.ylabel('training error')
 plt.title('training error of SVM with label 2,5')
 plt.show()
 plt.savefig('svm25')
-plt.figure(2)
 plt.plot(1-np.array(train_acc27))
 plt.xticks(range(len(train_acc27)))
 plt.xlabel('iteration')
@@ -302,7 +299,6 @@ plt.ylabel('training error')
 plt.title('training error of SVM with label 2,7')
 plt.show()
 plt.savefig('svm27')
-plt.figure(3)
 plt.plot(1-np.array(train_acc57))
 plt.xticks(range(len(train_acc57)))
 plt.xlabel('iteration')
@@ -310,7 +306,6 @@ plt.ylabel('training error')
 plt.title('training error of SVM with label 5,7')
 plt.show()
 plt.savefig('svm57')
-plt.figure(4)
 plt.plot(1-np.array(test_acc_ovo))
 plt.xticks(range(len(test_acc_ovo)))
 plt.xlabel('iteration')
@@ -363,8 +358,6 @@ class CNN(nn.Module):
 
 model = CNN()
 summary(model, (1,28,28))
-
-
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
@@ -399,7 +392,6 @@ for epoch in range(epochs):
 print('Done')
 
 # plot CNN's training error & test error v.s number of iteration
-plt.figure(1)
 plt.plot(train_err[:20], label='training error')
 plt.plot(test_err[:20], label='test error')
 plt.xticks(range(20))
