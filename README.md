@@ -7,15 +7,15 @@ SVM (Pegasos, Adagrad, One-versus-One) & CNN
 
 The goal is to establish different SVM from scratch to classify FashionMNIST dataset.  
 For binary classification, Pegasos SVM v.s SVM with Adagrad optimization are built here and compared.   
-For multi-class classification, One-Versus-One SVM v.s CNN are built and analyzed.  
+For multi-class classification, One-versus-One SVM v.s CNN are built and analyzed.  
 
 ### Prerequisites
 
-Put 'train.npy''train_labels.npy''test.npy''test_labels.npy' in the same folder with 'main.py', they are part of the FashionMNIST dataset.  
-These files can be found here https://drive.google.com/file/d/1EX6_Hs6g6atEl9Z1HMBOhlozu8n6Yb0g/view?usp=sharing
-https://drive.google.com/file/d/1A8yHSQ1ZHsOpxr1ntgGCciP9zHgv62go/view?usp=sharing
-https://drive.google.com/file/d/1VUUZqyUATdv8cbZKHyBl0sgxBCOU3IVn/view?usp=sharing
-https://drive.google.com/file/d/1kuQwaFMVPcQf7vDOQHibCWCOPOU6wih8/view?usp=sharing
+Put 'train.npy''train_labels.npy''test.npy''test_labels.npy' in the same folder with 'main.py', they are part of the FashionMNIST dataset. These files can be found here   
+https://drive.google.com/file/d/1EX6_Hs6g6atEl9Z1HMBOhlozu8n6Yb0g/view?usp=sharing  
+https://drive.google.com/file/d/1A8yHSQ1ZHsOpxr1ntgGCciP9zHgv62go/view?usp=sharing  
+https://drive.google.com/file/d/1VUUZqyUATdv8cbZKHyBl0sgxBCOU3IVn/view?usp=sharing  
+https://drive.google.com/file/d/1kuQwaFMVPcQf7vDOQHibCWCOPOU6wih8/view?usp=sharing  
 
 
 ### Data Visualization and Analysis
