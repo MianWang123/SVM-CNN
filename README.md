@@ -1,6 +1,6 @@
 ## Project Title
 
-SVM v.s CNN
+SVM (Pegasos, Adagrad, One-versus-One) & CNN
 
 
 ### Goal and Process
@@ -20,6 +20,7 @@ https://drive.google.com/file/d/1kuQwaFMVPcQf7vDOQHibCWCOPOU6wih8/view?usp=shari
 
 ### Data Visualization and Analysis
 
+#### Binary Classification
 For Pegasos, the best hyperparameters are T = 150, n = 800, lambda = 1;  
 For Adagrad, the best hyperparameters are T = 20, n = 100, lambda = 0.1.  
 Their training error graphs are shown below:  
@@ -27,6 +28,7 @@ Their training error graphs are shown below:
 <div align=center><img src="https://github.com/MianWang123/SVM-CNN/blob/master/pics/adagrad%20with%20T20_n100_lambda0.1.png"></div>  
 Now, let's compare the best model of Pegasos v.s Adagrad. As shown above, Adagrad achieves over 0.98 test accuracy after 1 iteration, yet Pegasos takes over 3 iterations to achieve the same and its accuracy is oscillating during the process.   Hence, Adagrad outruns Pegasos either in convergence rate or stability. The reason is that input data contain plenty of sparse parameters, exactly where Adagrad applies. Besides, the learning rate of Pegasos may be too high at first (inversely proportional to iterations), so it oscillates a lot.  
 
+#### Multi-class Classification
 For One-Versus-One SVM, the final test accuracy is 0.9423. Its training error graphs of 3 SVM models, plus test error graph, are shown below:  
 <div align=center><img src="https://github.com/MianWang123/SVM-CNN/blob/master/pics/svm25.png"></div>  
 <div align=center><img src="https://github.com/MianWang123/SVM-CNN/blob/master/pics/svm27.png"></div>  
